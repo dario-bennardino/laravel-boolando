@@ -7,7 +7,7 @@
                 <a href="partials.bambino">Bambino</a>
             </div>
             <div class="logo">
-                <img src="" alt="logo">
+                <img src="/img/boolean-logo.png" alt="logo">
             </div>
             <div class="social">
                 <i class="fa-regular fa-user"></i>
