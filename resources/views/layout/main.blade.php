@@ -19,7 +19,13 @@
 
     @include('partials.header')
 
-    @include('partials.main')
+
+    {{-- @include('partials.home') --}}
+    <main>
+        @include('partials.home')
+    </main>
+
+
 
     @include('partials.footer')
 

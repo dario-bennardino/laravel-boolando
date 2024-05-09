@@ -28,3 +28,11 @@ Route::get('/partials.uomo', function () {
 Route::get('/partials.bambino', function () {
     return view('partials.bambino');
 })->name('partials.bambino');
+
+// Route::get('/partials.home', function () {
+//     return view('partials.home');
+// })->name('partials.home');
+
+// Route::get('/partials.product', function () {
+//     return view('partials.product');
+// })->name('partials.product');
