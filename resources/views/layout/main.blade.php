@@ -23,6 +23,7 @@
     {{-- @include('partials.home') --}}
     <main>
         @include('partials.home')
+
     </main>
 
 

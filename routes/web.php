@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layout.main');
+    $products = config('products');
+    // dd($products);
+    return view('layout.main', compact('products'));
 })->name('layout.main');
 
 Route::get('/partials.donna', function () {
@@ -29,9 +31,13 @@ Route::get('/partials.bambino', function () {
     return view('partials.bambino');
 })->name('partials.bambino');
 
-// Route::get('/partials.home', function () {
-//     return view('partials.home');
-// })->name('partials.home');
+Route::get('/partials.home', function () {
+    //prendo l'array dei prodotti da config
+    $products = config('products');
+
+    // dd($products);
+    return view('partials.home', compact('products'));
+})->name('partials.home');
 
 // Route::get('/partials.product', function () {
 //     return view('partials.product');
