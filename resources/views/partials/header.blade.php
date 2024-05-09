@@ -2,9 +2,9 @@
     <div class="container-homepage">
         <div class="topbar">
             <div class="genere">
-                <a href="">Donna</a>
-                <a href="">Uomo</a>
-                <a href="">Bambino</a>
+                <a href="{{ route('partials.donna') }}">Donna</a>
+                <a href="partials.uomo">Uomo</a>
+                <a href="partials.bambino">Bambino</a>
             </div>
             <div class="logo">
                 <img src="" alt="logo">
