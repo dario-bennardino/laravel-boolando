@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: space-between;
+
+    .product {
+        margin: 10px;
+        width: 300px;
+
+        .top-product {
+            position: relative;
+
+            img {
+                max-width: 100%;
+            }
+
+            .discount {
+                position: absolute;
+                left: 0;
+                bottom: 30px;
+                padding: 5px;
+                font-size: 0.6rem;
+            }
+
+            .md {
+                background-color: green;
+                color: white;
+            }
+
+            .sm {
+                background-color: red;
+                color: white;
+            }
+
+            .sostenibilità {
+                position: absolute;
+                bottom: 30px;
+                left: 38px;
+                background-color: green;
+                color: white;
+                font-size: 0.6rem;
+                padding: 5px;
+            }
+
+            .sostenibilità-singolo {
+                position: absolute;
+                bottom: 30px;
+                left: 0;
+                background-color: green;
+                color: white;
+                font-size: 0.6rem;
+                padding: 5px;
+            }
+
+            .preferiti {
+                background-color: white;
+                padding: 5px 7px;
+                color: black;
+                position: absolute;
+                right: 0;
+                top: 5px;
+                // display: none;
+            }
+        }
+
+        .bottom-product {
+            .marca {
+                font-size: 0.9rem;
+            }
+
+            .articolo {
+                font-weight: bold;
+            }
+
+            .prezzi {
+                display: flex;
+
+                .prezzo-scontato {
+                    color: red;
+                    font-weight: bold;
+                }
+
+                .prezzo-pieno {
+                    text-decoration: line-through;
+                    padding-left: 5px;
+
+                }
+            }
+
+        }
+
+    }
+}

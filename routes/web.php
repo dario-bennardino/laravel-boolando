@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('layout.main');
+})->name('layout.main');
+
+Route::get('/partials.donna', function () {
+    return view('partials.donna');
+})->name('partials.donna');
+
+Route::get('/partials.uomo', function () {
+    return view('partials.uomo');
+})->name('partials.uomo');
+
+Route::get('/partials.bambino', function () {
+    return view('partials.bambino');
+})->name('partials.bambino');
