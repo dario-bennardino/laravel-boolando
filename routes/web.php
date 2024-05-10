@@ -31,14 +31,16 @@ Route::get('/partials.bambino', function () {
     return view('partials.bambino');
 })->name('partials.bambino');
 
-Route::get('/partials.home', function () {
-    //prendo l'array dei prodotti da config
+// Route::get('/partials.home', function () {
+//     //prendo l'array dei prodotti da config
+//     $products = config('products');
+
+//     // dd($products);
+//     return view('partials.home', compact('products'));
+// })->name('partials.home');
+
+Route::get('/product', function () {
     $products = config('products');
 
-    // dd($products);
-    return view('partials.home', compact('products'));
-})->name('partials.home');
-
-// Route::get('/partials.product', function () {
-//     return view('partials.product');
-// })->name('partials.product');
+    return view('partials.product', compact('products'));
+})->name('product');

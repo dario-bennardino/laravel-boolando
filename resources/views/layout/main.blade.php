@@ -20,10 +20,8 @@
     @include('partials.header')
 
 
-    {{-- @include('partials.home') --}}
     <main>
-        @include('partials.home')
-
+        @yield('content')
     </main>
 
 
