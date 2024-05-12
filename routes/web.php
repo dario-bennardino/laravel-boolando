@@ -39,7 +39,7 @@ Route::get('/partials.bambino', function () {
 //     return view('partials.home', compact('products'));
 // })->name('partials.home');
 
-Route::get('/product', function () {
+Route::get('/', function () {
     $products = config('products');
 
     return view('partials.product', compact('products'));
